@@ -1,0 +1,15 @@
+<div class="checkFormSection form-group">
+  <form id="check-form" #checkForm="ngForm" (ngSubmit)="convertToCheck(checkForm.valid)">
+    $ <mat-form-field>
+      <input id="money-input"  matInput 
+        name="amount"
+        placeholder="Amount"
+        [(ngModel)]="amount"
+        pattern="^\d{1,3}([,]?\d{3}){0,3}(\.\d{2})?$"
+        required>
+    </mat-form-field><br>
+    <div id="invalid-alert" class="mat-caption" [hidden]="!(checkForm.dirty && !checkForm.valid)">Please enter a valid monetary amount!</div>
+    <button type="submit" id="convert-button" mat-raised-button [disabled]="!checkForm.valid">Convert</button><br>
+  </form>
+  <div id="output" class="mat-headline">{{output}}</div>
+</div>

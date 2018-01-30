@@ -1,0 +1,52 @@
+{
+  "name": "solution-ng4",
+  "version": "1.0.0",
+  "description": "Angular 5 w/ Universal and Preboot.",
+  "license": "MIT",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --open",
+    "build": "ng build",
+    "build-universal": "ng build --prod --stats-json && ng build --prod --app universal --output-hashing=none",
+    "start-universal": "npm run build-universal && node src/server.js",
+    "lint": "ng lint"
+  },
+  "private": true,
+  "contributors": [],
+  "dependencies": {
+    "@angular/animations": "5.0.0",
+    "@angular/cdk": "2.0.0-beta.12",
+    "@angular/common": "5.0.0",
+    "@angular/compiler": "5.0.0",
+    "@angular/core": "5.0.0",
+    "@angular/forms": "5.0.0",
+    "@angular/http": "5.0.0",
+    "@angular/material": "2.0.0-beta.12",
+    "@angular/platform-browser": "5.0.0",
+    "@angular/platform-browser-dynamic": "5.0.0",
+    "@angular/platform-server": "5.0.0",
+    "@angular/router": "5.0.0",
+    "@nguniversal/express-engine": "1.0.0-beta.3",
+    "@nguniversal/module-map-ngfactory-loader": "5.0.0-beta.5",
+    "@ngx-universal/state-transfer": "4.0.1",
+    "core-js": "2.4.1",
+    "express": "4.16.2",
+    "preboot": "6.0.0-beta.1",
+    "rxjs": "5.5.2",
+    "typescript": "2.4.2",
+    "zone.js": "0.8.14"
+  },
+  "devDependencies": {
+    "@angular-devkit/core": "0.0.29",
+    "@angular/cli": "1.5.0",
+    "@angular/compiler-cli": "5.0.0",
+    "@angular/language-service": "4.4.6",
+    "@types/node": "6.0.60",
+    "codelyzer": "3.2.2",
+    "less": "3.0.0-alpha.3",
+    "less-loader": "4.0.5",
+    "ts-node": "3.2.0",
+    "tslint": "5.7.0",
+    "typescript": "2.4.2"
+  }
+}
