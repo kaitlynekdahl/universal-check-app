@@ -31,7 +31,7 @@
     "@ngx-universal/state-transfer": "4.0.1",
     "core-js": "2.4.1",
     "express": "4.16.2",
-    "preboot": "6.0.0-beta.1",
+    "preboot": "6.0.0-beta.0",
     "rxjs": "5.5.2",
     "typescript": "2.4.2",
     "zone.js": "0.8.14"

@@ -49,7 +49,7 @@ export function myOtherFunction () {
         appRoot: 'app-root',
         eventSelectors: [
           { selector: 'input', events: ['keypress', 'keyup', 'keydown', 'input', 'change'], action: myFunction },
-          { selector: 'input', events: ['keyup'], preventDefault: true, keyCodes: [13], freeze: true, action: myOtherFunction }
+          { selector: 'form', events: ['submit'], preventDefault: true, freeze: true, action: myOtherFunction },
         ]
       }),
     HttpClientModule,
